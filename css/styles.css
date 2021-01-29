@@ -16,6 +16,7 @@ h2,
 .page-title,
 h2,
 label,
+legend,
 hr {
     color: #2c3944;
 }
@@ -42,12 +43,12 @@ hr {
 }
 
 .thick-line {
-    border-top: 4px solid black;
+    border-top: 4px solid #2c3944;
     margin-bottom: 0;
 }
 
 .thin-line {
-    border-top: 2px solid black;
+    border-top: 2px solid #2c3944;
     margin-top: 2px;
 }
 
@@ -75,8 +76,7 @@ fieldset {
 }
 
 .contact {
-    background-color: #f7f7f7;
-    border-radius: 10px;
+    background-color: #e7fffe;
 }
 
 legend {
@@ -140,6 +140,10 @@ textarea:focus {
 }
 
 /* ---newsletter form--- */
+.newsletter {
+    background-color: #e7fffe;
+}
+
 .checkboxes, 
 .radios {
     display: flex;
@@ -183,4 +187,54 @@ Media Queries
 
 @media (min-width: 768px) {
 
+.main-section {
+    width: 50%;
+    margin: auto;
+    max-width: 600px;
+}
+
+.page-title {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.signup {
+    padding: 40px 10px 30px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+label {
+    color: #4f6b83;
+}
+
+.contact label {
+    width: 30%;
+}
+
+input[type="text"], 
+input[type="tel"],
+input[type="email"],
+select {
+    flex-basis: 70%;
+    align-self: flex-end;
+}
+
+#zip {
+    flex-basis: 30%;
+}
+
+legend {
+    padding: 30px 0 20px 0;
+}
+
+.copy {
+    font-size: .9em;
+    margin-top: 2em;
+}
 }
