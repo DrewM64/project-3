@@ -92,7 +92,7 @@ label {
 }
 
 .contact label {
-    size: 100%;
+    width: 100%;
 }
 
 input, select {
@@ -109,6 +109,13 @@ textarea {
     width: 100%;
     height: 50px;
     border-radius: 5px;
+    outline: none;
+    transition: border 0.3s, background-color 0.3s, outline 0.3s;
+    
+}
+
+textarea {
+    height: 120px;
 }
 
 input[type="text"]:focus, 
@@ -118,8 +125,6 @@ select:focus,
 textarea:focus {
     border: 2px solid #50718d;
     background-color: rgb(204, 204, 204);
-    outline: none;
-    transition: .3s;
 }
 
 #zip {
@@ -221,8 +226,7 @@ input[type="text"],
 input[type="tel"],
 input[type="email"],
 select {
-    flex-basis: 70%;
-    align-self: flex-end;
+    flex-basis: 68%;
 }
 
 #zip {
